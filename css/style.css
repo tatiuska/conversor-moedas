@@ -1,0 +1,108 @@
+/* Estilos para o Conversor de Moedas */
+@charset "UTF-8";
+/* Importação de Fonte externa do Google Fonts (Poppins) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Formatação das tags principais */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(36, 88, 70);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1 {
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    margin-top: 50px;
+}
+
+main {
+    text-align: center;
+    display: flex;
+}
+
+p {
+    font-size: 10pt;
+    font-weight: normal;
+    color: rgb(0,0,0);
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    word-break: normal;
+    white-space: normal;
+}
+
+/* Formulário para conversão */
+div.formulario {
+    width: 380px;
+    height: 380px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+form {
+    width: 350px;
+    height: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-size: 13px;
+    width: 90%;
+    color: rgb(90, 91, 90);
+}
+
+form select {
+    width: 90%;
+}
+
+form input {
+    width: 90%;
+}
+
+form, p {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+input[type=submit] {
+    width: 90%;
+    background-color: rgb(76,175,80);
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(36, 88, 70);
+}
+
+/* Footer da Página */
+footer {
+    height: 100px;
+}
+
+footer, p {
+    color: rgb(255, 255, 255);
+}

@@ -1,0 +1,57 @@
+<!-- Formulário para conversão de moedas utilizando a API do BC -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link para carregamento do style.css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Conversor de Moedas</h1>
+        <img src="./image/image01.png" alt="" width="400px" height="300px">
+    </header>
+    <main>
+        <div class="formulario">
+            <!-- Formulário para escolha de moedas e valor a ser convertido, utilizando o método post -->
+            <form action="conversor.php" method="post">
+                <p>
+                    <label for="moeda1">Escolha sua moeda atual: </label>
+                    <select name="moeda1" id="moeda1">
+                        <option value="1">Real (R&#36)</option>
+                        <!-- A desenvolver posteriormente as outras opções de conversão (moeda1)
+                        <option value="2">Iene (JP&#165)</option>
+                        <option value="3">Euro (&#8364)</option>
+                        <option value="4">Dólar Canadense (C&#36)</option>
+                        <option value="5">Dólar Americano (US&#36)</option>
+                        -->
+                    </select>
+                </p>
+                <p>
+                    <label for="moeda2">Escolha a moeda para qual deseja converter: </label>
+                    <select name="moeda2" id="moeda1">
+                        <option value="5">Dólar Americano (US&#36)</option>
+                        <option value="4">Dólar Canadense (C&#36)</option>
+                        <option value="3">Euro (&#8364)</option>
+                        <option value="2">Iene (JP&#165)</option>
+                        <option value="1">Real (R&#36)</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="valor">Informe o valor a ser convertido: </label>
+                    <input type="number" name="valor" id="valor" step="0.01">
+                </p>
+                <p>
+                    <input type="submit" value="Converter">
+                </p>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>2023 - Desenvolvido por Tatiana Weska.</p>
+    </footer>
+</body>
+</html>
